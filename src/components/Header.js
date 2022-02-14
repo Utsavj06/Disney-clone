@@ -1,33 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
+import logo from "../images/logo.svg"
+import homeIcon from "../images/home-icon.svg"
+import search from "../images/search-icon.svg"
+import watchList from "../images/watchlist-icon.svg"
+import movieIcon from "../images/movie-icon.svg"
+import seriesIcon from "../images/series-icon.svg"
+import dp from "../images/myphoto.jpg"
 
 const Header = () => {
   return (
     <Nav>
-        <Logo src="./images/logo.svg" />
+        <Logo src={logo} />
         <NavMenu>
             <a >
-                <img src="./images/home-icon.svg" />
+                <img src={homeIcon} />
                 <span>Home</span>
             </a>
             <a >
-                <img src="./images/search-icon.svg" />
+                <img src={search} />
                 <span>Search</span>
             </a>
             <a >
-                <img src="./images/watchlist-icon.svg" />
+                <img src={watchList} />
                 <span>Watchlist</span>
             </a>
             <a >
-                <img src="./images/movie-icon.svg" />
+                <img src={movieIcon} />
                 <span>Movies</span>
             </a>
             <a >
-                <img src="./images/series-icon.svg" />
+                <img src={seriesIcon} />
                 <span>Series</span>
             </a>
         </NavMenu>
-        <UserImg src="./images/myphoto.jpg" />
+        <UserImg src={dp} />
     </Nav>
   )
 }

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styledComponents from 'styled-components';
-
+import sliderBadging from "../images/slider-badging.jpg"
+import sliderBadag from "../images/slider-badag.jpg"
 const ImageSlider = () => {
 
     let settings = {
@@ -19,10 +19,10 @@ const ImageSlider = () => {
   return (
     <Carousel {...settings}>
         <Wrap>
-            <img src="/images/slider-badging.jpg" alt="" />
+            <img src={sliderBadging} alt="" />
         </Wrap>
         <Wrap>
-            <img src="/images/slider-badag.jpg" alt="" />
+            <img src={sliderBadag} alt="" />
         </Wrap>
     </Carousel>
   )

@@ -1,23 +1,28 @@
 import React from 'react'
 import Styled from "styled-components"
+import disney from "../images/viewers-disney.png"
+import pixar from "../images/viewers-pixar.png"
+import marvel from "../images/viewers-marvel.png"
+import starwars from "../images/viewers-starwars.png" 
+import national from "../images/viewers-national.png"
 
 const Viewers = () => {
   return (
     <Container>
         <Wrap>
-            <img src="/images/viewers-disney.png" />
+            <img src={disney} />
         </Wrap>
         <Wrap>
-            <img src="/images/viewers-pixar.png" />
+            <img src={pixar} />
         </Wrap>
         <Wrap>
-            <img src="/images/viewers-marvel.png" />
+            <img src={marvel} />
         </Wrap>
         <Wrap>
-            <img src="/images/viewers-starwars.png" />
+            <img src={starwars} />
         </Wrap>
         <Wrap>
-            <img src="/images/viewers-national.png" />
+            <img src={national} />
         </Wrap>
     </Container>
   )
